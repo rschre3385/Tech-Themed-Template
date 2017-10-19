@@ -4,10 +4,10 @@
 
 @font-face {
 	font-family: 'Aquatico';
-	src: url('Aquatico-Regular.eot');
-	src: url('Aquatico-Regular.eot?#iefix') format('embedded-opentype'),
-		url('Aquatico-Regular.woff') format('woff'),
-		url('Aquatico-Regular.ttf') format('truetype');
+	src: url('fonts/Aquatico-Regular.eot');
+	src: url('fonts/Aquatico-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Aquatico-Regular.woff') format('woff'),
+		url('fonts/Aquatico-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
