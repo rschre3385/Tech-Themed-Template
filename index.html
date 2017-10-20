@@ -76,6 +76,17 @@
 <section id="services">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				<h1 style="font-family: 'Aquatico'; font-size: 50px; padding-top: 30px">Services</h1>
+			</div>
+			<div class="col-md-4">
+				
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-12">
 				<div class="row">
 					<div class="col-md-4">
@@ -117,59 +128,80 @@
 </section>
 
 <section id="contact">
-<div class="row">
-	<div class="col-md-4">
+	<div class="row">
+		<div class="col-md-4">
 		
-	</div>
-	<div class="col-md-4">
-		<h1 style="font-family: 'Aquatico'; font-size: 50px">Contact Us!</h1>
-	</div>
-	<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+			<h1 style="font-family: 'Aquatico'; font-size: 50px">Contact Us!</h1>
+		</div>
+		<div class="col-md-4">
 		
+		</div>
 	</div>
-</div>
-  <div class="row">	
-  	<div class="col-md-2">
+	<div class="row">
+
+	</div>
+  	<div class="row">	
+  		<div class="col-md-2">
   		
-  	</div>
-    <form class="col-md-8">
-      <div class="row" id="ex">
-        <div class="input-field col-md-6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col-md-6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
+  		</div>
+    	<form class="col-md-8" id="contact-form" method="post" action="contact.php" role="form">
+    		<div class="messages">
+    			
+    		</div>
+      		<div class="row" id="ex">
+        		<div class="input-field col-md-6">
+          			<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+          			<label for="form_firstname">First Name</label>
+                    <div class="help-block with-errors"></div>
+        		</div>
+        		<div class="input-field col-md-6">
+          			<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+          			<label for="form_lastname">Last Name</label>
+          			<div class="help-block with-errors"></div>
+        		</div>
+      		</div>
 
-      <div class="row">
-        <div class="input-field col-md-12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <!--First column-->
-        <div class="col-md-12">
+      		<div class="row">
+        		<div class="input-field col-md-12">
+          			<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+          			<label for="form_email">Email</label>
+          			<div class="help-block with-errors"></div>
+        		</div>
+      		</div>
+      		<div class="row">
+      			<div class="input-field col-md-12">
+      				<input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone" name="phone">
+      				<label for="form_phone">Phone</label>
+      				<div class="help-block with-errors"></div>
+      			</div>
+      		</div>
+      		<div class="row">
+        	<!--First column-->
+        		<div class="col-md-12">
 
-            <div class="md-form">
-                <textarea type="text" id="form76" class="md-textarea"></textarea>
-                <label for="form76">Message</label>
-            </div>
+            		<div class="md-form">
+                		<textarea type="text" name="message" id="form_message" class="md-textarea" required="required"></textarea>
+                		<label for="form_message">Message</label>
+                		<div class="help-block with-errors"></div>
+            		</div>
 
-        </div>
-    </div>
-      <div>
-      	<a class="btn btn-primary waves-effect waves-light">Submit</a>
-      </div>
-    </form>
-    <div class="col-md-2">
-  		
-  	</div>
-  </div>
-  
+        		</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-4">
+    				
+    			</div>
+    			<div class="col-md-4">
+    				<a class="btn btn-primary btn-send waves-effect waves-light" type="submit" value="Send message">Submit</a>
+    			</div>
+    			<div class="col-md-4">
+    				
+    			</div>
+    		</div>
+    	</form>
+	</div>
 </section>
 
 
@@ -234,6 +266,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
 </body>
 
 </html>

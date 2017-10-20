@@ -4,10 +4,10 @@
 
 @font-face {
 	font-family: 'Aquatico';
-	src: url('fonts/Aquatico-Regular.otf');
-	src: url('fonts/Aquatico-Regular.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Aquatico-Regular.woff') format('woff'),
-		url('fonts/Aquatico-Regular.ttf') format('truetype');
+	src: url('../fonts/Aquatico-Regular.otf');
+	src: url('../fonts/Aquatico-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Aquatico-Regular.woff') format('woff'),
+		url('../fonts/Aquatico-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -62,7 +62,7 @@ section {
 }
 
 #about #info {
-	margin-top: 25%;
+	margin-top: 300px;
 	margin-left: 0%;
 	text-align: center;
 	font-size: 25px;
@@ -124,6 +124,7 @@ section {
 nav {
   margin: 25px;
   position: fixed;
+  z-index: 1000;
 }
  
 nav ul {
